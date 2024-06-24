@@ -5,10 +5,18 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public int maxHealth = 10;
     public GameObject bulletPrefab;
     public Transform firePoint;
     public GameObject bombPrefab;
     public GameObject activeItem;
+
+    private int currentHealth;
+
+    private void Start()
+    {
+        currentHealth = maxHealth;
+    }
 
     private void Update()
     {
@@ -115,6 +123,25 @@ public class PlayerController : MonoBehaviour
         {
             DropTrinket();
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        Debug.Log("Player Health: " + currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        // Oyuncunun ölmesi durumunda yapılacaklar
+        Debug.Log("Player Died!");
+        // Örneğin, sahneyi yeniden başlatabilirsiniz:
+        // UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
     }
 
     void UseActiveItem()

@@ -1,3 +1,4 @@
+using TMPro;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -5,8 +6,8 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
-    Rigidbody2D rigidbody;
-    public Text collectedText;
+    Rigidbody2D rb;
+    public TextMeshProUGUI collectedText;
     public static int collectedAmount = 0;
     public GameObject bulletprefab;
     public float bulletSpeed;
@@ -17,7 +18,7 @@ public class PlayerController : MonoBehaviour
    // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour
             lastFire = Time.time;
         }
         
-        rigidbody.velocity = new Vector3(horizontal * speed, vertical * speed, 0);
+        rb.velocity = new Vector3(horizontal * speed, vertical * speed, 0);
         collectedText.text = "Items Collected: " + collectedAmount;
     }
 
@@ -41,7 +42,7 @@ public class PlayerController : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletprefab, transform.position, transform.rotation) as GameObject;
         bullet.AddComponent<Rigidbody2D>().gravityScale = 0;
-        bullet.AddComponent<Rigidbody2D>().velocity = new Vector3 (
+        bullet.GetComponent<Rigidbody2D>().velocity = new Vector3 (
             (x < 0) ? Mathf.Floor(x) * bulletSpeed : Mathf.Ceil(x) * bulletSpeed,
             (y < 0) ? Mathf.Floor(y) * bulletSpeed : Mathf.Ceil(y) * bulletSpeed,
         0

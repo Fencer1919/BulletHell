@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     public TextMeshProUGUI collectedText;
     public static int collectedAmount = 0;
-    public GameObject bulletprefab;
+    public GameObject bulletPrefab;
     public float bulletSpeed;
     private float lastFire;
     public float fireDelay;
@@ -40,12 +40,12 @@ public class PlayerController : MonoBehaviour
 
     void Shoot(float x, float y)
     {
-        GameObject bullet = Instantiate(bulletprefab, transform.position, transform.rotation) as GameObject;
+        GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation) as GameObject;
         bullet.AddComponent<Rigidbody2D>().gravityScale = 0;
-        bullet.GetComponent<Rigidbody2D>().velocity = new Vector3 (
+        bullet.GetComponent<Rigidbody2D>().velocity = new Vector3(
             (x < 0) ? Mathf.Floor(x) * bulletSpeed : Mathf.Ceil(x) * bulletSpeed,
             (y < 0) ? Mathf.Floor(y) * bulletSpeed : Mathf.Ceil(y) * bulletSpeed,
             0
-    );
+        );
     }
 }

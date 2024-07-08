@@ -53,6 +53,25 @@ https://miro.com/app/board/uXjVOSSCpsI=/
 -Backlog düzenleri için belirtilen site seçildi
 -Sprint düzenlemesi için kritik yapıldı
 -Kodlarda " core mechanic " bitirildi.
+
+### Ürün Durumu: Ekran görüntüleri:
+## "Ekran görüntülerindeki gibi eşyaları toplayıp mermi atabiliyoruz"
+![image](https://github.com/Fencer1919/BulletHell/assets/134067104/de538be5-be4a-4b43-bf1f-e7379fa30cab)
+
+![image1](https://github.com/Fencer1919/BulletHell/assets/134067104/63bcb972-01de-4706-b77b-5bb99573e99a)
+
+### Sprint Review:
+-Oyun konsepti ve GitHub Repo'su başarıyla ayarlandı. Kodlarda "core mechanic" tamamlandı ve test edildi.
+-Asset araştırması için belirlenen tarz doğrultusunda ilerleme kararı alındı. Tasarım ekibi, seçilen tarz üzerinde çalışmalara başlayacak.
+-Backlog düzenlemesi için belirlenen site kullanılmaya başlandı ve tüm ekip üyeleri tarafından onaylandı.
+-Sprint boyunca elde edilen ilerlemeler gözden geçirildi ve oyun tasarımı açısından eklenmesi gereken bazı yeni özellikler belirlendi.
+*Katılımcılar: Tüm ekip üyeleri
+
+### Sprint Retrospective:
+-Takım içindeki görev dağılımıyla ilgili bazı düzenlemeler yapılmasına karar verildi. Görevler daha net tanımlanacak ve sorumluluklar daha belirgin olacak.
+T-ahmin puanları gözden geçirildi ve sprint planlama toplantılarında developer'ların daha fazla geri bildirim vermesi gerektiği anlaşıldı.
+-Unit test'ler için ayrılan zaman arttırılmalı ve test süreçleri daha verimli hale getirilmeli.
+-Ekip içi iletişim ve iş birliği arttırılmalı, daha sık ve düzenli toplantılar yapılmalı.
 -Asset araştırılması için tarz belirlenildi.
 
 

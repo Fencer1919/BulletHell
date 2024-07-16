@@ -1,28 +1,29 @@
-using TMPro;
-using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     public float speed;
-    Rigidbody2D rb;
-    public TextMeshProUGUI collectedText;
+    Rigidbody2D rb2d; // Değişken adı değiştirildi
+    public Text collectedText;
     public static int collectedAmount = 0;
+
     public GameObject bulletPrefab;
     public float bulletSpeed;
     private float lastFire;
     public float fireDelay;
 
-
-   // Start is called before the first frame update
+    // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb2d = GetComponent<Rigidbody2D>(); // Değişken adı burada da değiştirildi
     }
 
+    // Update is called once per frame
     void Update()
     {
+        fireDelay = GameController.FireRate;
+        speed = GameController.MoveSpeed;
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
@@ -33,8 +34,8 @@ public class PlayerController : MonoBehaviour
             Shoot(shootHor, shootVert);
             lastFire = Time.time;
         }
-        
-        rb.velocity = new Vector3(horizontal * speed, vertical * speed, 0);
+
+        rb2d.velocity = new Vector3(horizontal * speed, vertical * speed, 0); // Değişken adı burada da değiştirildi
         collectedText.text = "Items Collected: " + collectedAmount;
     }
 

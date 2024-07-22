@@ -82,16 +82,21 @@ T-ahmin puanları gözden geçirildi ve sprint planlama toplantılarında develo
 ![image](https://github.com/user-attachments/assets/b17684e3-4984-42d0-bf74-f6c06d8b6b83)
 
 ## Sprint Review:
--Oyun konsepti ve GitHub Repo'su başarıyla ayarlandı. Kodlama kısmı tamamlandı.
--Asset ve animasyonlar için gerekli araştırmalar yapıldı ve uygun assetler seçildi. Tasarım ekibi seçilen assetler üzerinde çalışmalara başladı.
--Sprint boyunca elde edilen ilerlemeler gözden geçirildi ve oyun tasarımı açısından eklenmesi gereken bazı yeni özellikler belirlendi.
+-Oyun konsepti ve GitHub Repo'su başarıyla ayarlandı. 
+-Kodlama kısmı tamamlandı.
+-Asset ve animasyonlar için gerekli araştırmalar yapıldı ve uygun assetler seçildi. 
+-Tasarım ekibi seçilen assetler üzerinde çalışmalara başladı.
+-Sprint boyunca elde edilen ilerlemeler gözden geçirildi. 
+-Oyun tasarımı açısından eklenmesi gereken bazı yeni özellikler belirlendi.
 -Toplantı sırasında neler yapılabileceği görüşüldü ve gelecek adımlar belirlendi.
 
 
 ## Sprint Retrospective:
 -Takım içindeki görev dağılımında bazı düzenlemeler yapılmasına karar verildi. Görevler daha net tanımlanacak ve sorumluluklar daha belirgin olacak.
--Tahmin puanları gözden geçirildi ve sprint planlama toplantılarında geliştiricilerin daha fazla geri bildirimde bulunmaları gerektiği belirlendi.
+-Tahmin puanları gözden geçirildi 
+-sprint planlama toplantılarında geliştiricilerin daha fazla geri bildirimde bulunmaları gerektiği belirlendi.
 -Unit test'ler için ayrılan zaman artırılmalı ve test süreçleri daha verimli hale getirilmeli.
--Asset araştırması ve tasarım tarzı belirlendi, bu yönde çalışmalar hızlandırıldı.
+-Asset araştırması ve tasarım tarzı belirlendi.
+-Assetlerin eklenmesini hızlandırıldı.
 
 ### Katılımcılar: Tüm ekip üyeleri

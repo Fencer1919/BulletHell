@@ -74,5 +74,24 @@ T-ahmin puanları gözden geçirildi ve sprint planlama toplantılarında develo
 -Ekip içi iletişim ve iş birliği arttırılmalı, daha sık ve düzenli toplantılar yapılmalı.
 -Asset araştırılması için tarz belirlenildi.
 
+### Sprint 2 
+##Ürün Durumu: Ekran görüntüleri:
+
+![image](https://github.com/user-attachments/assets/44435e32-86fe-484a-bd30-ec4506cead28)
+
+![image](https://github.com/user-attachments/assets/b17684e3-4984-42d0-bf74-f6c06d8b6b83)
+
+##Sprint Review:
+-Oyun konsepti ve GitHub Repo'su başarıyla ayarlandı. Kodlama kısmı tamamlandı.
+-Asset ve animasyonlar için gerekli araştırmalar yapıldı ve uygun assetler seçildi. Tasarım ekibi seçilen assetler üzerinde çalışmalara başladı.
+-Sprint boyunca elde edilen ilerlemeler gözden geçirildi ve oyun tasarımı açısından eklenmesi gereken bazı yeni özellikler belirlendi.
+-Toplantı sırasında neler yapılabileceği görüşüldü ve gelecek adımlar belirlendi.
 
 
+##Sprint Retrospective:
+-Takım içindeki görev dağılımında bazı düzenlemeler yapılmasına karar verildi. Görevler daha net tanımlanacak ve sorumluluklar daha belirgin olacak.
+-Tahmin puanları gözden geçirildi ve sprint planlama toplantılarında geliştiricilerin daha fazla geri bildirimde bulunmaları gerektiği belirlendi.
+-Unit test'ler için ayrılan zaman artırılmalı ve test süreçleri daha verimli hale getirilmeli.
+-Asset araştırması ve tasarım tarzı belirlendi, bu yönde çalışmalar hızlandırıldı.
+
+###Katılımcılar: Tüm ekip üyeleri

@@ -13,10 +13,13 @@ public class PlayerController : MonoBehaviour
     private float lastFire;
     public float fireDelay;
 
+    private Animator animator; // Animator değişkeni eklendi
+
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>(); // Değişken adı burada da değiştirildi
+        animator = GetComponent<Animator>(); // Animator component'ini al
     }
 
     // Update is called once per frame
@@ -29,7 +32,13 @@ public class PlayerController : MonoBehaviour
 
         float shootHor = Input.GetAxis("ShootHorizontal");
         float shootVert = Input.GetAxis("ShootVertical");
-        if((shootHor != 0 || shootVert != 0) && Time.time > lastFire + fireDelay)
+
+        // Animasyon parametreleri güncelleniyor
+        animator.SetFloat("Horizontal", horizontal);
+        animator.SetFloat("Vertical", vertical);
+        animator.SetFloat("Speed", new Vector2(horizontal, vertical).sqrMagnitude);
+
+        if ((shootHor != 0 || shootVert != 0) && Time.time > lastFire + fireDelay)
         {
             Shoot(shootHor, shootVert);
             lastFire = Time.time;

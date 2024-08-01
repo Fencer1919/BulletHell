@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
-    Rigidbody2D rb2d; // Değişken adı değiştirildi
+    private Rigidbody2D rb2d;
     public Text collectedText;
     public static int collectedAmount = 0;
 
@@ -12,17 +12,16 @@ public class PlayerController : MonoBehaviour
     public float bulletSpeed;
     private float lastFire;
     public float fireDelay;
+    public GameObject restartButton;
 
-    private Animator animator; // Animator değişkeni eklendi
+    private Animator animator;
 
-    // Start is called before the first frame update
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>(); // Değişken adı burada da değiştirildi
-        animator = GetComponent<Animator>(); // Animator component'ini al
+        rb2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         fireDelay = GameController.FireRate;
@@ -33,7 +32,6 @@ public class PlayerController : MonoBehaviour
         float shootHor = Input.GetAxis("ShootHorizontal");
         float shootVert = Input.GetAxis("ShootVertical");
 
-        // Animasyon parametreleri güncelleniyor
         animator.SetFloat("Horizontal", horizontal);
         animator.SetFloat("Vertical", vertical);
         animator.SetFloat("Speed", new Vector2(horizontal, vertical).sqrMagnitude);
@@ -44,18 +42,29 @@ public class PlayerController : MonoBehaviour
             lastFire = Time.time;
         }
 
-        rb2d.velocity = new Vector3(horizontal * speed, vertical * speed, 0); // Değişken adı burada da değiştirildi
+        Vector2 movement = new Vector2(horizontal * speed, vertical * speed);
+        rb2d.velocity = movement;
         collectedText.text = "Items Collected: " + collectedAmount;
     }
 
     void Shoot(float x, float y)
     {
         GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation) as GameObject;
-        bullet.AddComponent<Rigidbody2D>().gravityScale = 0;
-        bullet.GetComponent<Rigidbody2D>().velocity = new Vector3(
+        Rigidbody2D bulletRb = bullet.AddComponent<Rigidbody2D>();
+        bulletRb.gravityScale = 0;
+        bulletRb.velocity = new Vector2(
             (x < 0) ? Mathf.Floor(x) * bulletSpeed : Mathf.Ceil(x) * bulletSpeed,
-            (y < 0) ? Mathf.Floor(y) * bulletSpeed : Mathf.Ceil(y) * bulletSpeed,
-            0
+            (y < 0) ? Mathf.Floor(y) * bulletSpeed : Mathf.Ceil(y) * bulletSpeed
         );
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            rb2d.velocity = Vector2.zero;
+            Time.timeScale = 0;
+            restartButton.SetActive(true);
+        }
     }
 }

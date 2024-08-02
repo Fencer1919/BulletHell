@@ -130,3 +130,5 @@ T-ahmin puanları gözden geçirildi ve sprint planlama toplantılarında develo
 
 
 
+
+

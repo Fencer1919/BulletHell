@@ -123,7 +123,7 @@ T-ahmin puanları gözden geçirildi ve sprint planlama toplantılarında develo
 -Oyunun son aşamalarında, geliştirme sürecinin sorunsuz ilerlemesi için düzenli olarak yapılan toplantıların ve iletişimin devam etmesi gerektiği vurgulanmıştır.
 
 
-
+###Katılımcılar: Tüm ekip üyeleri
 
 
 

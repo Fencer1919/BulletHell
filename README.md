@@ -106,14 +106,14 @@ T-ahmin puanları gözden geçirildi ve sprint planlama toplantılarında develo
 ![image](https://github.com/user-attachments/assets/3d4a23e6-4609-4bc2-9286-69d2688541a8)
 ![image](https://github.com/user-attachments/assets/3b5eb80f-535e-4ca6-99be-49936c56ea4d)
 
-##Sprint Review:
+## Sprint Review:
 
 -Oyunun kodlama kısmı tamamlandıktan sonra, asset ekleme aşamasına geçilmiştir. Bu süreçte animasyon, arka plan, buton ekleme, start ve finish ekranları gibi görevler başarıyla tamamlanmıştır.
 -Çıkan ürünün çalışmasında ve testlerinde bir problem görülmemiştir.
 -Ekstra eklenmesi gereken özellikler belirlenmiştir.
 -Takım içindeki iletişim ve iş birliği sürecinin verimli olduğu gözlemlenmiştir.
 
-##Sprint Retrospective:
+## Sprint Retrospective:
 
 -Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır.
 -Tahmin puanları gözden geçirilmeli ve sprint planlama toplantılarında gerekli geri bildirimlerin developer'lar tarafından verildiğine emin olunmalı.
@@ -123,7 +123,7 @@ T-ahmin puanları gözden geçirildi ve sprint planlama toplantılarında develo
 -Oyunun son aşamalarında, geliştirme sürecinin sorunsuz ilerlemesi için düzenli olarak yapılan toplantıların ve iletişimin devam etmesi gerektiği vurgulanmıştır.
 
 
-###Katılımcılar: Tüm ekip üyeleri
+### Katılımcılar: Tüm ekip üyeleri
 
 
 

@@ -9,7 +9,7 @@ Mehmet Bilici: Team Member
 Kardelen Canım: Team Member
 
 ### Ürün İsmi
-To Be Determined (Bullet Hell)
+unity 94 (Bullet Hell)
 
 ### Ürün Açıklaması
 Oyunumuz, oyunculara zorlayıcı ve eğlenceli bir deneyim sunacak bir bullet hell tarzı oyundur. Zorluk seviyeleri kontrollü bir şekilde artacak, oyunculara farklı stratejiler geliştirme fırsatı verecektir. Basit ama bağımlılık yapıcı bir oynanışa sahiptir.

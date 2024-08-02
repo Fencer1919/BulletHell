@@ -16,19 +16,11 @@ public class HealthUIController : MonoBehaviour
         fillValue = fillValue / GameController.MaxHealth;
         heartContainer.GetComponent<Image>().fillAmount = fillValue;
 
-        // Sağlık sıfır olduğunda oyunu yeniden başlat
+        // Sağlık sıfır olduğunda FinishScene sahnesine geçiş yap
         if (GameController.Health <= 0)
         {
-            Debug.Log("Health is zero, restarting game...");
-            RestartGame();
+            Debug.Log("Health is zero, switching to FinishScene...");
+            SceneManager.LoadScene("FinishScene");
         }
-    }
-
-    void RestartGame()
-    {
-        // Mevcut sahneyi yeniden yükle
-        Scene currentScene = SceneManager.GetActiveScene();
-        Debug.Log("Restarting scene: " + currentScene.name);
-        SceneManager.LoadScene(currentScene.name);
     }
 }
